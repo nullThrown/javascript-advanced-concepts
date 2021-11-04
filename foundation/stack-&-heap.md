@@ -9,8 +9,12 @@ Asynchronous code -- The javascript runtime may only be able to do one thing at 
 
 LIFO - the last function added to the stack will be the first one to complete.
 
-stackoverflow - when the stack fills up with too many tasks (tasks are being added faster than they can be executed) the process will exit and an error will be thrown i.e., stack overflow error.
-A.K.A blowing the stack
+Stack Overflow - when the stack fills up with too many tasks (tasks are being added faster than they can be executed) the process will exit and an error will be thrown i.e., stack overflow.
+A.K.A RangeError, blowing the stack
 
 ##Heap
 The place where data is read and write to. A region in memory that the JS engine provides for the current application.
+
+###garbage Collection
+
+###Memory leaks
