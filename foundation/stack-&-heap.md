@@ -13,8 +13,15 @@ Stack Overflow - when the stack fills up with too many tasks (tasks are being ad
 A.K.A RangeError, blowing the stack
 
 ##Heap
-The place where data is read and write to. A region in memory that the JS engine provides for the current application.
+The place where data is read and written to. A region in memory that the JS engine provides for the current application.
 
 ###garbage Collection
+GC monitors the allocated memory and determines when a block of memory is no longer needed. Memory deemed unneeded is reclaimed and provides space for new memory to be allocated. Garabage collection is not a perfect process because it must determine algorithmically what is no longer needed.
 
 ###Memory leaks
+data stored in memory that is no longer needed but continues to be stored in memory, taking up useful space. Garabage collection is put in place to mitigate these but is not perfect. Hence, C's better optimization by forcing programmers to deal with memory allocation/deletion manually.
+
+3 common memory leaks:
+1.global variables --
+2.event listeners --
+3.setIntereval --
